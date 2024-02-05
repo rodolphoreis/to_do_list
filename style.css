@@ -4,38 +4,62 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(Mala-de-praia-5-dicas-especiais-para-organizar-e-otimizar-a-bagagem.jpg);
+  background-image: url(2345_08012020145951.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: "Annie Use Your Telescope", cursive;
   min-height: 100vh;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.557);
 }
+@media screen and (max-width: 500px) {
+  body {
+    background-image: url(pexels-photo-12314825.jpeg);
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.469);
+    height: auto;
+    margin: 5px;
+    font-size: 2 0px;
+    text-align: center;
+  }
 
+  form input {
+    width: 155px;
+    outline: none;
+  }
+  .todo {
+    width: 350px;
+    text-shadow: none;
+  }
+}
 header {
   font-size: 2rem;
 }
 
 header,
 form {
-  
   min-height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 form input,
 form button {
   padding: 0.5rem;
+  height: 52px;
   font-size: 2rem;
   border: none;
   background: white;
+  outline: none;
+  font-family: "Annie Use Your Telescope", cursive;
 }
+
 form button {
   color: #ff6f47;
   background: #f7fffe;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 form button:hover {
   background: #ff6f47;
@@ -60,13 +84,14 @@ form button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 .filter-todo {
   padding: 1rem;
 }
 .todo li {
   flex: 1;
+  text-shadow: none;
 }
 
 .trash-btn,
